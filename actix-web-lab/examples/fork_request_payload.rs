@@ -51,7 +51,7 @@ where
 async fn main() -> io::Result<()> {
     env_logger::init_from_env(env_logger::Env::new().default_filter_or("info"));
 
-    info!("staring server at http://localhost:8080");
+    info!("starting server at http://localhost:8080");
 
     HttpServer::new(|| {
         App::new()
